@@ -1,25 +1,29 @@
-## This project is a simple introduction to Docker. 
 
-It includes a Dockerfile that builds a simple Node.js application, as well as a few scripts that can be used to run the application locally and in a Docker container
+# Get Started with Docker
+This project serves as a simple introduction to Docker, providing a Dockerfile to build a basic Node.js application. It also includes a few scripts that facilitate running the application locally and within a Docker container.
 
-# Getting Started
+
+## Prerequisites
 To get started, make sure you have Docker installed on your system. Once Docker is set up, follow these steps:
 
-1. Clone the project repository:
+## Clone the Project Repository
 
-git clone  https://github.com/tech-girl-lead/get-started-with-docker.git
-cd get-started-with-docker
+Use the following command to clone the project repository:
 
-2. Build the Docker image:
+=> git clone  https://github.com/tech-girl-lead/get-started-with-docker.git
+=> cd get-started-with-docker
 
-docker build -t node-app:1.0 .
+## Build the Docker image:
+Build the Docker image for the Node.js application using:
 
-3. Run the Application Locally
+=> docker build -t node-app:1.0 .
+
+## Run the Application Locally
 
 After building the Docker image, run the application on your local machine with the following command:
 
-docker run -d -p 3000:3000 node-app:1.0
+=> docker run -d -p 3000:3000 node-app:1.0
 
 The application will be accessible in your browser at http://localhost:3000
 
-If you have any improvements or fixes, please feel free to submit a pull request.
+We welcome contributions to enhance and expand this "Get Started with Docker" project. If you have any improvements or fixes, please feel free to submit a pull request.
